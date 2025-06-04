@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ogólne */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f7fb;
+  color: #2c3e50;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nagłówek */
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 25px 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+/* Główna zawartość */
+.main-flex {
+  display: flex;
+  margin: 30px 0;
+  gap: 30px;
+}
+
+.left-column {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-column {
+  flex: 1;
+  background-color: #dff0fb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-column ul {
+  list-style-type: square;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* Stopka */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery {
+  margin: 40px 0;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
